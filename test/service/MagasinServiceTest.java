@@ -42,13 +42,13 @@ public class MagasinServiceTest {
     /**
      * Test of initBD method, of class MagasinService.
      */
-//    @Test
-//    public void testInitBD() {
-//        System.out.println("initBD");
-//        MagasinService instance = new MagasinService();
-//        instance.initBD();
-//    }
-//
+    @Test
+    public void testInitBD() {
+        System.out.println("initBD");
+        MagasinService instance = new MagasinService();
+        instance.initBD();
+    }
+
 //    /**
 //     * Test of creerMagasin method, of class MagasinService.
 //     */

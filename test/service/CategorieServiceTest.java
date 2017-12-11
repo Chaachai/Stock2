@@ -40,12 +40,12 @@ public class CategorieServiceTest {
     /**
      * Test of initDB method, of class CategorieService.
      */
-    @Test
-    public void testInitDB() {
-        System.out.println("initDB");
-        CategorieService instance = new CategorieService();
-        instance.initDB();
-    }
+//    @Test
+//    public void testInitDB() {
+//        System.out.println("initDB");
+//        CategorieService instance = new CategorieService();
+//        instance.initDB();
+//    }
 
     /**
      * Test of creerCategorie method, of class CategorieService.

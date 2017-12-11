@@ -48,7 +48,7 @@ public class ClientServiceTest {
 //        ClientService instance = new ClientService();
 //        instance.initDB();
 //    }
-//
+
 //    /**
 //     * Test of ajouterClient method, of class ClientService.
 //     */

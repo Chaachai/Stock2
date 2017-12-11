@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package service;
 
 import bean.Stock;
@@ -48,10 +44,10 @@ public class StockServiceTest {
 //        StockService instance = new StockService();
 //        instance.initDB();
 //    }
-//
-//    /**
-//     * Test of ajouterStock method, of class StockService.
-//     */
+
+    /**
+     * Test of ajouterStock method, of class StockService.
+     */
 //    @Test
 //    public void testAjouterStock() {
 //        System.out.println("ajouterStock");
@@ -118,17 +114,17 @@ public class StockServiceTest {
     /**
      * Test of findByCriteria method, of class StockService.
      */
-    @Test
-    public void testFindByCriteria() {
-        System.out.println("findByCriteria");
-        String idStock = null;
-        String idProduit = null;
-        String idMagasin = null;
-        double quantiteMax = 5000.0;
-        double quantiteMin = 600.0;
-        StockService instance = new StockService();
-        List<Stock> result = instance.findByCriteria(idStock, idProduit, idMagasin, quantiteMax, quantiteMin);
-        System.out.println(result);
-    }
+//    @Test
+//    public void testFindByCriteria() {
+//        System.out.println("findByCriteria");
+//        String idStock = null;
+//        String idProduit = null;
+//        String idMagasin = null;
+//        double quantiteMax = 5000.0;
+//        double quantiteMin = 600.0;
+//        StockService instance = new StockService();
+//        List<Stock> result = instance.findByCriteria(idStock, idProduit, idMagasin, quantiteMax, quantiteMin);
+//        System.out.println(result);
+//    }
 
 }

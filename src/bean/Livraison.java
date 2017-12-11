@@ -6,10 +6,14 @@
 package bean;
 
 import java.io.Serializable;
+import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+import javax.persistence.Temporal;
 
 /**
  *
@@ -22,6 +26,84 @@ public class Livraison implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    @ManyToOne
+    private Client client;
+    private String AdrLivraison;
+    @OneToOne
+    private Commande commande;
+    @Temporal(javax.persistence.TemporalType.DATE)
+    private Date dateLivraison;
+    
+    
+    
+
+    public Livraison() {
+        dateLivraison = new Date();
+    }
+
+    public Livraison(Long id) {
+        dateLivraison = new Date();
+        this.id = id;
+    }
+
+    public Livraison(String AdrLivraison) {
+        dateLivraison = new Date();
+        this.AdrLivraison = AdrLivraison;
+    }
+
+    public Date getDateLivraison() {
+        return dateLivraison;
+    }
+
+    public void setDateLivraison(Date dateLivraison) {
+        this.dateLivraison = dateLivraison;
+    }
+    
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Client getClient() {
+        if(client==null){
+            client=new Client();
+        }
+        return client;
+        
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
+    }
+
+    public String getAdrLivraison() {
+        return AdrLivraison;
+    }
+
+    public void setAdrLivraison(String AdrLivraison) {
+        this.AdrLivraison = AdrLivraison;
+    }
+
+    public Commande getCommande() {
+        if(commande==null){
+            commande=new Commande();
+        }
+        return commande;
+    }
+
+    public void setCommande(Commande commande) {
+        this.commande = commande;
+    }
+
+    
+    
+    
+    
+    
 
     @Override
     public int hashCode() {
@@ -42,5 +124,12 @@ public class Livraison implements Serializable {
         }
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "Livraison{" + "id=" + id + ", AdrLivraison=" + AdrLivraison + '}';
+    }
+    
+    
 
 }

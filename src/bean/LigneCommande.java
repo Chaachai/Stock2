@@ -25,6 +25,7 @@ public class LigneCommande implements Serializable {
     private Long id;
     private double quantite;
     private double prixTotal;
+    private double  TVA;
     @ManyToOne
     private Produit produit;
     @ManyToOne
@@ -37,11 +38,22 @@ public class LigneCommande implements Serializable {
         this.id = id;
     }
 
-    public LigneCommande(Long id, double quantite, double prixTotal) {
-        this.id = id;
+    public LigneCommande(double quantite,double TVA) {
+        
         this.quantite = quantite;
-        this.prixTotal = prixTotal;
+        
+        this.TVA = TVA;
     }
+
+    public double getTVA() {
+        return TVA;
+    }
+
+    public void setTVA(double TVA) {
+        this.TVA = TVA;
+    }
+
+   
 
     public Long getId() {
         return id;
@@ -111,7 +123,9 @@ public class LigneCommande implements Serializable {
 
     @Override
     public String toString() {
-        return "LigneCommande{" + "id=" + id + ", quantite=" + quantite + ", prixTotal=" + prixTotal + '}';
+        return "LigneCommande{" + "id=" + id + ", quantite=" + quantite + ", prixTotal=" + prixTotal + ", TVA=" + TVA + '}';
     }
+
+    
 
 }

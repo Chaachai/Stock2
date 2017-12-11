@@ -32,6 +32,10 @@ public class Client implements Serializable {
     private ClasseClient classe;
     @OneToMany(mappedBy = "client")
     private List<Commande> commandes;
+    @OneToMany(mappedBy = "client")
+    private List<Facture> factures;
+    @OneToMany(mappedBy = "client")
+    private List<Livraison> livraisons;
 
     public Client() {
     }

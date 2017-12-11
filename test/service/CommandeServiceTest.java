@@ -42,7 +42,7 @@ public class CommandeServiceTest {
 
     /**
      * Test of ajouterCommande method, of class CommandeService.
-//     */
+     */
 //    @Test
 //    public void testAjouterCommande() {
 //        System.out.println("ajouterCommande");
@@ -52,10 +52,10 @@ public class CommandeServiceTest {
 //        int result = instance.ajouterCommande(idCommande, clientID);
 //        System.out.println(result);
 //    }
-//
-//    /**
-//     * Test of initDB method, of class CommandeService.
-//     */
+
+    /**
+     * Test of initDB method, of class CommandeService.
+     */
 //    @Test
 //    public void testInitDB() {
 //        System.out.println("initDB");
@@ -66,16 +66,16 @@ public class CommandeServiceTest {
     /**
      * Test of findByCriteria method, of class CommandeService.
      */
-    @Test
-    public void testFindByCriteria() {
-        System.out.println("findByCriteria");
-        String idCommande = null;
-        String idClient = null;
-        Date dateMin = null;
-        Date dateMax = null;
-        CommandeService instance = new CommandeService();
-        List<Commande> result = instance.findByCriteria(idCommande, idClient, dateMin, dateMax);
-        System.out.println(result);
-    }
-    
+//    @Test
+//    public void testFindByCriteria() {
+//        System.out.println("findByCriteria");
+//        String idCommande = null;
+//        String idClient = null;
+//        Date dateMin = null;
+//        Date dateMax = null;
+//        CommandeService instance = new CommandeService();
+//        List<Commande> result = instance.findByCriteria(idCommande, idClient, dateMin, dateMax);
+//        System.out.println(result);
+//    }
+//    
 }
