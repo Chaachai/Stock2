@@ -13,6 +13,7 @@
     <class>bean.Livraison</class>
     <class>bean.Facture</class>
     <class>bean.LigneFacture</class>
+    <class>bean.User</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/stock2?zeroDateTimeBehavior=convertToNull"/>
       <property name="javax.persistence.jdbc.user" value="root"/>

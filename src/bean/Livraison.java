@@ -31,33 +31,42 @@ public class Livraison implements Serializable {
     private String AdrLivraison;
     @OneToOne
     private Commande commande;
-    @Temporal(javax.persistence.TemporalType.DATE)
-    private Date dateLivraison;
+    private Date dateLivraisonPrevue;
+    private Date dateLivraisonEffective;
     
     
     
 
     public Livraison() {
-        dateLivraison = new Date();
     }
 
     public Livraison(Long id) {
-        dateLivraison = new Date();
         this.id = id;
     }
 
     public Livraison(String AdrLivraison) {
-        dateLivraison = new Date();
         this.AdrLivraison = AdrLivraison;
     }
 
-    public Date getDateLivraison() {
-        return dateLivraison;
+    public Date getDateLivraisonPrevue() {
+        return dateLivraisonPrevue;
     }
 
-    public void setDateLivraison(Date dateLivraison) {
-        this.dateLivraison = dateLivraison;
+    public void setDateLivraisonPrevue(Date dateLivraisonPrevue) {
+        this.dateLivraisonPrevue = dateLivraisonPrevue;
     }
+
+    public Date getDateLivraisonEffective() {
+        return dateLivraisonEffective;
+    }
+
+    public void setDateLivraisonEffective(Date dateLivraisonEffective) {
+        this.dateLivraisonEffective = dateLivraisonEffective;
+    }
+
+    
+
+    
     
 
     public Long getId() {
